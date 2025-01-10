@@ -1,4 +1,5 @@
 <?php
+  // php keyword echo displays the text wrapped in single or double quotes, as output in the browser.
   echo"I love pizza <br>";
   echo"It's really good";
 ?>
