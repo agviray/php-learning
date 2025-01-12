@@ -7,6 +7,7 @@
   // interacted with.
 
   // isset() returns true if a variable is declared/set and not null.
+  // - You can check to see if a button was clicked using isset(). See the isset-and-empty-functions-practice.php file.
   // empty() returns true if a variable is not declared, false, null, or an empty string ""
 
   // ***************************
