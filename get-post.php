@@ -26,6 +26,8 @@
   // Cannot bookmark.
   // Requests are not cached.
   // Better for submitting credentials.
+  // $_POST is also an "associative array", which is an array whose values are key=>value pairs. 
+  // - See the associative-arrays.php file notes for details.
 ?>
 
 <!DOCTYPE html>

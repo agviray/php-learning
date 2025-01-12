@@ -3,7 +3,8 @@
   // associative arrays
   // ========================
   // Associative arrays are made of key=>value pairs (each array element is a key=>value pair)
-
+  // Note that the $_POST superglobal variable is actually an associative array.
+  
   // *****************************
   // Examples of key-value pairs:
   // *****************************
