@@ -26,12 +26,14 @@ php-learning is a repo that contains my PHP notes and learnings.
 
   - Apache Web Server must be running, otherwise XAMPP will be unable to access and serve any web files.
 
-- Clone this repo, and move the folder to the **htdocs** folder inside the XAMPP installation directory.
+- Clone this repo, and move the repo's root directory (the **website** folder) into the **htdocs** folder that's inside the XAMPP installation directory.
   - Note: In order for XAMPP to properly access and serve web files, all the project files (HTML, PHP, CSS, etc.) must be placed within the "htdocs" folder located inside your XAMPP installation directory.
 
 <p>
 <img src="./assets/images/repo-relocation.png" width="600">
 </p>
+
+- Open the **website** folder in your a code editor, ie VS Code.
 
 - In this repo's root directory (**website**), you can now create .php files and view them in the browser.
 
