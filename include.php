@@ -24,5 +24,4 @@
   // You can create HTML files for a header and a footer.
   // Then, in each page of your website, you can include that same header and footer.
   // Therefore, these files are reusable.
-
 ?>
