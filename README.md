@@ -39,3 +39,41 @@ php-learning is a repo that contains my PHP notes and learnings.
 
 - Entering **localhost** in your browser's address bar will take you to the XAMPP dashboard. To access the **website** folder and its contents in the browser, enter: **localhost/website**
   - For example, if you created a **test.php** file inside the **website** folder, enter **localhost/website/test** to view the contents of **test.php**.
+
+## VSCode Warning: "Cannot validate since a PHP installation could not be found"
+
+In VS Code, if you're getting the warning, "Cannot validate since a PHP installation could not be found", that means you have to validate the executable path of the PHP executable that's found within the XAMPP server. **To do this, follow the instructions below.**
+
+1. The warning says "Use the setting **php.validate.executablePath** to configure the PHP executable". So, you need to access the **settings** file to do this. In the warning's window, click "Open Settings".
+
+<p>
+<img src="./assets/images/could-not-validate-warning.png" width="600">
+</p>
+
+2. A tab opens in VS Code, similar to what's shown below. Click "Edit in settings.json"
+
+<p>
+<img src="./assets/images/edit-in-settings-json-file.png" width="600">
+</p>
+
+3. A settings.json file opens in another tab. Locate the **"php.validate.executablePath"** property/key.
+
+<p>
+<img src="./assets/images/settings-json-file.png" width="600">
+</p>
+
+4. The value of this property must be set as the path to the PHP executable which is in the XAMPP server.
+
+5. On your device, find and copy the path to the PHP executable in the XAMPP server.
+
+- Note: For Mac users, the PHP executable is the **php.ini** file located here:
+<pre>/Applications/XAMPP/xamppfiles/etc/php.ini (*** SIDE NOTE ONLY - DO NOT USE THIS PATH ***)</pre>
+
+- However, **the path that you need is it's enclosing folder**. Copy this path:
+<pre>/Applications/XAMPP/xamppfiles/etc (*** USE THIS PATH ***)</pre>
+
+<p>
+<img src="./assets/images/php-executable-location.png" width="600">
+</p>
+
+6. Go back to the settings.json file, and set this path as the string value to the **"php.validate.executablePath"** property.
