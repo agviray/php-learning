@@ -13,3 +13,6 @@
   <p>Home page content goes here.</p>
 </body>
 </html>
+<?php
+  include("footer.html");
+?>
