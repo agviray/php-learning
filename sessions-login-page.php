@@ -42,6 +42,8 @@
       $_SESSION["username"] = $_POST["username"];
       $_SESSION["password"] = $_POST["password"];
 
+      // You can redirect the browser to the sessions-home-page using PHP's built-in header() function.
+      header("location: sessions-home-page.php");
     } else {
       echo "Please check your credentials. <br>";
     }
