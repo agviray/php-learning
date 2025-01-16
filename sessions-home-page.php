@@ -11,7 +11,7 @@
   //    to make their values accessible in this file.
 
   // 6) Create another session before any HTML. 
-  //    - You will always need to create a session to access session key=>value pairs.
+  //    - You will always need to create a session if you want to access its key=>value pairs.
   session_start(); 
 ?>
 <!DOCTYPE html>
@@ -23,12 +23,25 @@
 </head>
 <body>
   <h1>This is the Sessions Home Page</h1>
-  <a href="sessions-login-page.php">This goes to the Sessions Login Page</a>
+  <form action="sessions-home-page.php" method="post">
+    <input type="submit" name="logout" value="logout">
+  </form>
 </body>
 </html>
 <?php
   // Now you can access the session's key=value data that was created in the sessions-login-page.php file.
   echo "<br>";
-  echo $_SESSION["username"] . "<br>";
-  echo $_SESSION["password"] . "<br>";
+  echo "Welcome back, {$_SESSION["username"]}! <br><br>";
+  echo "Current username: {$_SESSION["username"]} <br>";
+  echo "Current password: {$_SESSION["password"]} <br>";
+  
+  
+
+  // PHP code for logging out
+  if (isset($_POST["logout"])) {
+    // Use the session_destroy() function to destroy the session.
+    session_destroy();
+    // Navigate back to login page upon successful logout.
+    header("location: sessions-login-page.php");
+  }
 ?>
